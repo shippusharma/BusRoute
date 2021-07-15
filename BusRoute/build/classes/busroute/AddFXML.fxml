@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="282.0" prefWidth="296.0" style="-fx-background-color: rgb(200,200,255);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="busroute.AddFXMLController">
+   <children>
+      <TextField fx:id="txtRouteNo" layoutX="26.0" layoutY="19.0" minHeight="35.0" onKeyReleased="#kr" prefHeight="25.0" prefWidth="248.0" promptText="Route No" />
+      <ComboBox fx:id="cmbInsertAfter" layoutX="26.0" layoutY="119.0" minHeight="35.0" prefHeight="25.0" prefWidth="248.0" promptText="Insert After" />
+      <TextField fx:id="txtStopageName" layoutX="27.0" layoutY="70.0" minHeight="35.0" prefHeight="25.0" prefWidth="248.0" promptText="Stopage Name" />
+      <Button fx:id="btnAdd" defaultButton="true" layoutX="27.0" layoutY="171.0" minHeight="35.0" mnemonicParsing="false" onAction="#he" prefHeight="25.0" prefWidth="248.0" text="Add" />
+      <Button fx:id="btnBack" cancelButton="true" layoutX="27.0" layoutY="221.0" minHeight="35.0" mnemonicParsing="false" onAction="#he" prefHeight="25.0" prefWidth="248.0" text="Back" />
+   </children>
+</AnchorPane>

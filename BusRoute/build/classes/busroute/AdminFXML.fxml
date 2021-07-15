@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1000.0" style="-fx-background-color: tan;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="busroute.AdminFXMLController">
+   <children>
+      <Button fx:id="btnBack" cancelButton="true" layoutX="35.0" layoutY="620.0" mnemonicParsing="false" onAction="#he" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: rgb(140, 40, 10);" text="Back" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS Bold" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <Button fx:id="btnDelete" layoutX="35.0" layoutY="568.0" mnemonicParsing="false" onAction="#he" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: rgb(140, 40, 10);" text="Delete" textFill="WHITE">
+         <font>
+            <Font name="Comic Sans MS Bold" size="18.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Button>
+      <TextField fx:id="txtSi" layoutX="36.0" layoutY="73.0" minHeight="36.0" onKeyReleased="#kr" promptText="Search" />
+      <ComboBox fx:id="cmbSc" layoutX="34.0" layoutY="24.0" minHeight="36.0" onAction="#cmbHe" prefWidth="150.0" />
+      <TableView fx:id="tblList" layoutX="210.0" layoutY="10.0" prefHeight="671.0" prefWidth="768.0" style="-fx-background-color: rgb(255,255,220);">
+         <columns>
+            <TableColumn prefWidth="75.0" text="C1" />
+            <TableColumn prefWidth="75.0" text="C2" />
+         </columns>
+      </TableView>
+      <Button fx:id="btnAdd" layoutX="34.0" layoutY="515.0" mnemonicParsing="false" onAction="#he" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: rgb(140, 40, 10);" text="Add" textFill="WHITE">
+         <effect>
+            <DropShadow />
+         </effect>
+         <font>
+            <Font name="Comic Sans MS Bold" size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

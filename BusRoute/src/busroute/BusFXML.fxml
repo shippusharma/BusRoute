@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="540.0" prefWidth="661.0" style="-fx-background-image: url('images/bus.jpg'); -fx-background-size: cover;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="busroute.BusFXMLController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="540.0" opacity="0.8" stroke="BLACK" strokeType="INSIDE" width="666.0" />
+      <Label layoutX="232.0" layoutY="29.0" text="Bus" textFill="#ff0404">
+         <font>
+            <Font name="Comic Sans MS Bold" size="41.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <Label layoutX="310.0" layoutY="31.0" text="Route" textFill="#7905ff">
+         <font>
+            <Font name="Comic Sans MS Bold" size="41.0" />
+         </font>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Label>
+      <ComboBox fx:id="cmbTo" layoutX="235.0" layoutY="130.0" minHeight="50.0" minWidth="150.0" prefHeight="25.0" prefWidth="150.0" promptText="To" style="-fx-font: 30px;" />
+      <ComboBox fx:id="cmbFrom" layoutX="55.0" layoutY="130.0" minHeight="50.0" minWidth="150.0" prefWidth="150.0" promptText="From" />
+      <Button fx:id="btnSearch" layoutX="412.0" layoutY="130.0" minHeight="50.0" minWidth="150.0" mnemonicParsing="false" onAction="#he" prefHeight="25.0" prefWidth="175.0" style="-fx-background-color: rgb(150, 50, 10);" text="Search">
+         <font>
+            <Font name="Comic Sans MS Bold" size="22.0" />
+         </font>
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="#f7ff08" />
+                  <Stop color="#f7ff08" offset="0.007662835249042145" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Button>
+      <Hyperlink fx:id="btnLogin" layoutX="590.0" layoutY="16.0" onAction="#linkLogin" text="Login" underline="true">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font>
+      </Hyperlink>
+      <TextArea fx:id="taRes" editable="false" layoutX="55.0" layoutY="194.0" prefHeight="315.0" prefWidth="535.0" promptText="Result" style="-fx-background-color: rgb(255,255,200);" />
+   </children>
+</AnchorPane>
